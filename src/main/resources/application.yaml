@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: FOOD-CATALOGUE-SERVICE
+  profiles:
+    active: dev
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    #to convert ORM (findAll()) language to DB specific language (select *from restaurent)
+    #org.hibernate.dialect.MySQL8Dialect
+    #database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+server:
+  port: 9093
+
+
